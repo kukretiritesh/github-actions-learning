@@ -1,0 +1,19 @@
+# Define the name of the workflow
+name: First Workflow
+
+# Trigger: define when this workflow should be triggered
+on: 
+  workflow_dispatch:
+
+# Indicates that the children are jobs 
+jobs:        
+  # Job name
+  first-job:
+    # Define the runners
+    runs-on: ubuntu-latest             
+    steps:
+      - name: Print Reading
+        run: echo "Hello world:"
+
+      - name: Print Goodbye
+        run: echo "Hello world"
